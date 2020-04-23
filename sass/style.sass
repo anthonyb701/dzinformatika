@@ -1,0 +1,61 @@
+// Базовые настройки сетки
+    
+@import 'grid'
+
+// Slick slider
+
+@import 'slick'
+
+// Настройки шрифтов
+
+@import 'fonts'
+
+// Шапка сайта
+
+.title
+   text-align: center
+   margin: auto
+   padding: 70px 50px 30px
+   background: transparent
+.text
+   &__title
+      text-align: center
+
+.slick-prev
+ background-color: #212121
+
+.slick-next 
+
+.slick-slider
+   position: relative
+
+
+.reviews__btn
+   cursor: pointer
+   font-size: 0
+   color: transparent
+   position: absolute
+   top: 50%
+   z-index: 1
+   transform: translateY(-50%)
+   background: transparent
+
+
+.reviews__btn:after 
+   content: ""
+   display: block
+   width: 16px
+   height: 16px
+   border-top: 2px solid #ccc
+   border-left: 2px solid #ccc
+   top: 50%
+   right: 20px
+   z-index: 1 
+
+.reviews__btn--prev 
+   left: 0
+   transform: rotate(-45deg)
+
+.reviews__btn--next 
+   right: 0
+   transform: rotate(135deg) 
