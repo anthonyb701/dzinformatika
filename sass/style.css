@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1600px;
+  max-height: 500px;
   margin: auto;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
@@ -161,19 +164,58 @@
   font-style: normal;
 }
 
+.section__title {
+  background-color: #000000;
+  border-bottom: 1px solid #ffffff;
+}
+
+.slider {
+  background-color: #000000;
+}
+
+.img__logo {
+  width: 240px;
+  height: 218px;
+  margin-bottom: 40px;
+}
+
 .title {
   text-align: center;
   margin: auto;
-  padding: 70px 50px 30px;
+  padding: 0px 0 10px;
   background: transparent;
+  font-family: 'Bangers', cursive;
+  font-size: 75px;
+  padding-top: 25px;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.container__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .text__title {
   text-align: center;
+  font-family: 'Bangers', cursive;
+  font-size: 50px;
+  color: #ffffff;
 }
 
-.slick-prev {
-  background-color: #212121;
+.slider {
+  padding-top: 50px;
 }
 
 .slick-slider {
@@ -185,7 +227,7 @@
   font-size: 0;
   color: transparent;
   position: absolute;
-  top: 50%;
+  top: 35%;
   z-index: 1;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -205,14 +247,36 @@
 }
 
 .reviews__btn--prev {
-  left: 0;
+  left: -25px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
 .reviews__btn--next {
-  right: 0;
+  right: -25px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+.slick-item__wrap {
+  margin-top: 10px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+}
+
+.slick-item__item {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+}
+
+.slick-item__item img {
+  width: 530px;
+  height: 298px;
 }
 /*# sourceMappingURL=style.css.map */

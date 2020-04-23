@@ -11,31 +11,50 @@
 @import 'fonts'
 
 // Шапка сайта
+.section__title
+   background-color: #000000
+   border-bottom: 1px solid #ffffff
+.slider
+   background-color: #000000;  
+.img__logo
+   width: 240px
+   height: 218px
+   margin-bottom: 40px
 
 .title
    text-align: center
    margin: auto
-   padding: 70px 50px 30px
+   padding: 0px 0 10px
    background: transparent
+   font-family: 'Bangers', cursive
+   font-size: 75px
+   padding-top: 25px
+   margin-top: 0
+   color: #ffffff
+.container__flex
+   display: flex
+   flex-direction: column
+   justify-content: center
+   align-items: center
 .text
    &__title
       text-align: center
+      font-family: 'Bangers', cursive
+      font-size: 50px
+      color: #ffffff
 
-.slick-prev
- background-color: #212121
-
-.slick-next 
+.slider
+   padding-top: 50px
 
 .slick-slider
    position: relative
-
 
 .reviews__btn
    cursor: pointer
    font-size: 0
    color: transparent
    position: absolute
-   top: 50%
+   top: 35%
    z-index: 1
    transform: translateY(-50%)
    background: transparent
@@ -53,9 +72,21 @@
    z-index: 1 
 
 .reviews__btn--prev 
-   left: 0
+   left: -25px
    transform: rotate(-45deg)
 
 .reviews__btn--next 
-   right: 0
-   transform: rotate(135deg) 
+   right: -25px
+   transform: rotate(135deg)
+
+.slick-item
+   &__wrap
+      margin-top: 10px
+      display: flex!important
+      justify-content: space-between
+      flex-wrap: no-wrap
+   &__item
+      flex-basis: 33.3%
+      img 
+         width: 530px
+         height: 298px
