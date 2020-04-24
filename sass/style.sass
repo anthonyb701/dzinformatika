@@ -10,10 +10,12 @@
 
 @import 'fonts'
 
+body, html
+   overflow-x: hidden
 // Шапка сайта
 .section__title
-   background-color: #000000
-   border-bottom: 1px solid #ffffff
+   background: url("../img1/tesla_back.jpg") no-repeat center
+   // border-bottom: 1px solid #ffffff 
 .slider
    background-color: #000000;  
 .img__logo
@@ -31,6 +33,16 @@
    padding-top: 25px
    margin-top: 0
    color: #ffffff
+.title1
+   text-align: center
+   margin: auto
+   padding: 75px 0 50px
+   background: transparent
+   font-family: 'Bangers', cursive
+   font-size: 55px
+   margin-top: 0
+   color: #ffffff
+   text-shadow: 3px 5px 2px #474747;
 .container__flex
    display: flex
    flex-direction: column
@@ -40,11 +52,13 @@
    &__title
       text-align: center
       font-family: 'Bangers', cursive
+      padding-top: 25px
       font-size: 50px
       color: #ffffff
 
 .slider
-   padding-top: 50px
+   padding-top: 95px
+   padding-bottom: 135px
 
 .slick-slider
    position: relative
@@ -63,8 +77,8 @@
 .reviews__btn:after 
    content: ""
    display: block
-   width: 16px
-   height: 16px
+   width: 30px
+   height: 30px
    border-top: 2px solid #ccc
    border-left: 2px solid #ccc
    top: 50%
@@ -72,11 +86,11 @@
    z-index: 1 
 
 .reviews__btn--prev 
-   left: -25px
+   left: -30px
    transform: rotate(-45deg)
 
 .reviews__btn--next 
-   right: -25px
+   right: -30px
    transform: rotate(135deg)
 
 .slick-item
@@ -90,3 +104,43 @@
       img 
          width: 530px
          height: 298px
+
+.background
+   width: 1920px
+   height: 818px
+   margin-top: -20px
+   padding-top: 25px
+   &__wrapp
+      display: flex
+      justify-content: space-around
+   &__image
+      width: 600px
+      height: 600px
+      box-shadow: 0px 0px 25px 5px rgba(247,244,244,0.77)
+      display: block
+   &__title
+      &-title1
+         color: #ffffff
+         font-size: 80px
+         margin: 0
+         padding: 40px 0 35px
+         text-shadow: 3px 5px 2px #474747;
+         padding-left: 15px
+   &__text 
+      max-width: 800px
+      
+      &-p
+         margin-left: 25px
+         margin-top: 140px
+         color: #ffffff
+         font-size: 32px
+         display: block
+         text-shadow: 5px 9px 5px rgba(30,31,33,0.82);
+.before
+   &__section
+      background: url("../img1/wall.jpg") no-repeat center
+      background-size: cover
+      height: 1080px
+   &-after1
+      max-width: 1200px
+      margin: auto 
