@@ -11,5 +11,7 @@ $(window).load(function() {
   $('.slick-slider').slick({
      prevArrow: $('.reviews__btn--prev'),
      nextArrow: $('.reviews__btn--next'),
+     autoplay: true,
+     autoplaySpeed: 3000,
   });
 });
